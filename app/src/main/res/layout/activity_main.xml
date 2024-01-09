@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="11dp"
         android:text="Next"
-        android:id="@+id/next"/>
+        android:id="@+id/btnNext"/>
 
 
 

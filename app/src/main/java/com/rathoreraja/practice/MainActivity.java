@@ -16,14 +16,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button next ;
+        Button btnNext ;
 
-        next = findViewById(R.id.next);
-        next.setOnClickListener(new View.OnClickListener() {
+        btnNext = findViewById(R.id.btnNext);
+        btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent iNext = new Intent(MainActivity.this,secondActivity.class);
-                startActivity(iNext);
+
+                iNext.putExtra("RollNo",10);
+
+                iNext.putExtra("title","Home");
+
+                iNext.putExtra("StudentName","Rathore");
             }
         });
     }
